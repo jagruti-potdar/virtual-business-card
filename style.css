@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 20px;
+}
+
+.card {
+    width: 320px;
+    background: linear-gradient(
+        135deg,
+        rgba(255,255,255,0.35),
+        rgba(255,255,255,0.1)
+    );
+    backdrop-filter: blur(18px);
+    border-radius: 22px;
+    padding: 28px 22px;
+    text-align: center;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.4);
+}
+
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+
+.profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 30%;
+    border: 5px solid white;
+    margin-bottom: 14px;
+    background-color: #fff;
+}
+
+
+.name {
+    font-size: 20px;
+    font-weight: 600;
+    white-space: nowrap;   
+}
+
+.role {
+    font-size: 14px;
+    color: #444;
+    margin-top: 4px;
+}
+
+.bio {
+    font-size: 13px;
+    margin: 12px 0;
+    color: #555;
+}
+
+.contact {
+    margin: 16px 0;
+}
+
+.contact a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.contact a:hover {
+    color: #4a6cf7;
+    transform: scale(1.1);
+}
+
+#qrcode {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 400px) {
+    .card {
+        width: 100%;
+    }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Virtual Business Card</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons (FIXED) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+
+            <img src="profile.png" class="profile" alt="Profile">
+
+            <h2 class="name">Jagruti Ganesh Potdar</h2>
+
+            <p class="role">Web Development Intern</p>
+
+            <p class="bio">
+                Focused on building clean, responsive and user-friendly websites using modern web technologies.
+            </p>
+
+            <div class="contact">
+                <a href="mailto:jagrutipotdar1808@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="tel:+919529565449" title="Call"><i class="fa-solid fa-phone"></i></a>
+                <a href="https://www.linkedin.com/in/jagruti-potdar-18j31" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/jagruti-potdar" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+
+            <div id="qrcode"></div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
